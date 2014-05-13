@@ -19,7 +19,7 @@ app.get('/applicants', function(req, res){
 // creates and applicant
 app.post('/applicant', function(req, res){
 	console.log(req.body);
-	res.send('Success!');
+	res.redirect('/success');
 });
 
 app.get('/success', function(req,res){
